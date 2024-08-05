@@ -1,0 +1,1820 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"ambos gen_gpa\",\"AUSENCIA_GRADE\",\"genero_tiempo\",\"mujer_gpa\",\"hombre_gpa\",\"ser_social_educación\",\"educación_appoyo\",\"TABLA\",\"educaación y apoyo en grade\",\"alumnos por nota\",\"padres e hios\",\"genero por nota\",\"horaspromedio\",\"etnia promedio\",\"CONTEO ETNIA\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.131.1203.0 (24.07)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "es-CO",
+    "cultures": [
+      {
+        "name": "es-CO",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "AutoDetected_53b5f2d2-ab6d-48fb-8689-1bc371e41558",
+        "fromColumn": "GradeClass",
+        "fromTable": "ambos gen_gpa",
+        "toColumn": "GradeClass",
+        "toTable": "mujer_gpa"
+      },
+      {
+        "name": "AutoDetected_37c7f3ff-88cb-46c4-a0a3-441cdbc10a8b",
+        "fromColumn": "Promedio",
+        "fromTable": "AUSENCIA_GRADE",
+        "toColumn": "GradeClass",
+        "toTable": "mujer_gpa"
+      },
+      {
+        "name": "AutoDetected_14486727-cfba-49bc-9042-701a141be690",
+        "fromColumn": "Gender",
+        "fromTable": "mujer_gpa",
+        "toColumn": "Gender",
+        "toTable": "genero_tiempo"
+      },
+      {
+        "name": "AutoDetected_5f4d93d0-afe8-49cf-97f2-0d67155bb686",
+        "fromColumn": "GradeClass",
+        "fromTable": "ambos gen_gpa",
+        "toColumn": "GradeClass",
+        "toTable": "hombre_gpa"
+      },
+      {
+        "name": "AutoDetected_8373bae8-4e51-4dd4-b0c8-27d26c161ded",
+        "fromColumn": "Promedio",
+        "fromTable": "AUSENCIA_GRADE",
+        "toColumn": "GradeClass",
+        "toTable": "hombre_gpa"
+      },
+      {
+        "name": "AutoDetected_dc9f3dac-9f90-4412-8dc8-8d2210aa2884",
+        "fromColumn": "Gender",
+        "fromTable": "hombre_gpa",
+        "isActive": false,
+        "toColumn": "Gender",
+        "toTable": "genero_tiempo"
+      },
+      {
+        "name": "AutoDetected_85716522-c9af-4bf8-bb3b-92e065fe15a9",
+        "fromColumn": "GradeClass",
+        "fromTable": "TABLA",
+        "toColumn": "GradeClass",
+        "toTable": "mujer_gpa"
+      },
+      {
+        "name": "AutoDetected_6d947c41-aff4-4f17-a105-7ee5ef47d0c2",
+        "fromColumn": "GradeClass",
+        "fromTable": "TABLA",
+        "toColumn": "GradeClass",
+        "toTable": "hombre_gpa"
+      },
+      {
+        "name": "AutoDetected_fccee6e6-c912-4b2b-8dbf-ec85044a5282",
+        "fromColumn": "Gender",
+        "fromTable": "TABLA",
+        "isActive": false,
+        "toColumn": "Gender",
+        "toTable": "genero_tiempo"
+      },
+      {
+        "name": "AutoDetected_041913f0-aec6-4fd1-bdc4-f540f0fa5054",
+        "fromColumn": "GradeClass",
+        "fromTable": "educaación y apoyo en grade",
+        "toColumn": "GradeClass",
+        "toTable": "mujer_gpa"
+      },
+      {
+        "name": "AutoDetected_f7ce32c5-8693-4a45-9f35-f33e52c82564",
+        "fromColumn": "GradeClass",
+        "fromTable": "educaación y apoyo en grade",
+        "toColumn": "GradeClass",
+        "toTable": "hombre_gpa"
+      },
+      {
+        "name": "AutoDetected_fc2d9ced-de72-4666-a243-1d951d9f0b18",
+        "crossFilteringBehavior": "bothDirections",
+        "fromCardinality": "one",
+        "fromColumn": "Notas",
+        "fromTable": "alumnos por nota",
+        "toColumn": "GradeClass",
+        "toTable": "mujer_gpa"
+      },
+      {
+        "name": "AutoDetected_5af0fae8-2194-419b-a36a-9f7c6f0ca1ee",
+        "crossFilteringBehavior": "bothDirections",
+        "fromCardinality": "one",
+        "fromColumn": "Notas",
+        "fromTable": "alumnos por nota",
+        "isActive": false,
+        "toColumn": "GradeClass",
+        "toTable": "hombre_gpa"
+      },
+      {
+        "name": "AutoDetected_4744c7ba-c9d6-4032-a0e6-df17f7f475e5",
+        "fromColumn": "GradeClass",
+        "fromTable": "padres e hios",
+        "toColumn": "GradeClass",
+        "toTable": "mujer_gpa"
+      },
+      {
+        "name": "AutoDetected_6afb2520-de7a-4a30-8aef-2226e75e8896",
+        "fromColumn": "GradeClass",
+        "fromTable": "padres e hios",
+        "toColumn": "GradeClass",
+        "toTable": "hombre_gpa"
+      },
+      {
+        "name": "AutoDetected_35602a11-b315-4ade-b8b3-ecd6f908ae18",
+        "fromColumn": "Notas",
+        "fromTable": "genero por nota",
+        "toColumn": "GradeClass",
+        "toTable": "mujer_gpa"
+      },
+      {
+        "name": "AutoDetected_18f09e30-0fd6-4993-a837-04af0827c285",
+        "fromColumn": "Notas",
+        "fromTable": "genero por nota",
+        "toColumn": "GradeClass",
+        "toTable": "hombre_gpa"
+      },
+      {
+        "name": "AutoDetected_a0a8477a-07f3-48c0-aba5-861ba74c4433",
+        "fromColumn": "Género",
+        "fromTable": "genero por nota",
+        "isActive": false,
+        "toColumn": "Gender",
+        "toTable": "genero_tiempo"
+      },
+      {
+        "name": "AutoDetected_cfd6d00b-6c69-4d46-aad2-7db5873a44f8",
+        "fromColumn": "Grados",
+        "fromTable": "horaspromedio",
+        "toColumn": "GradeClass",
+        "toTable": "mujer_gpa"
+      },
+      {
+        "name": "AutoDetected_6cb090a4-94fd-4369-9fc6-f4d9dd6c81a7",
+        "fromColumn": "Grados",
+        "fromTable": "horaspromedio",
+        "toColumn": "GradeClass",
+        "toTable": "hombre_gpa"
+      },
+      {
+        "name": "AutoDetected_dbd37441-fca0-47fd-b0d0-1e3639edf2ab",
+        "fromColumn": "GradeClass",
+        "fromTable": "etnia promedio",
+        "toColumn": "GradeClass",
+        "toTable": "mujer_gpa"
+      },
+      {
+        "name": "AutoDetected_4d2688fd-a5c8-4419-ac0b-f0e3fbe3032b",
+        "fromColumn": "GradeClass",
+        "fromTable": "etnia promedio",
+        "toColumn": "GradeClass",
+        "toTable": "hombre_gpa"
+      },
+      {
+        "name": "AutoDetected_f5391cc7-1759-4598-b25c-612e51f4d1ac",
+        "fromColumn": "Ethnicity",
+        "fromTable": "TABLA",
+        "toColumn": "Ethnicity",
+        "toTable": "CONTEO ETNIA"
+      },
+      {
+        "name": "AutoDetected_9105ee54-5dfb-4fb7-9f7a-46bb1bb3fe66",
+        "fromColumn": "Ethnicity",
+        "fromTable": "etnia promedio",
+        "toColumn": "Ethnicity",
+        "toTable": "CONTEO ETNIA"
+      }
+    ],
+    "sourceQueryCulture": "es-CO",
+    "tables": [
+      {
+        "name": "ambos gen_gpa",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegación"
+          }
+        ],
+        "changedProperties": [
+          {
+            "property": "IsHidden"
+          }
+        ],
+        "columns": [
+          {
+            "name": "ParentalSupport",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "f956a30d-424d-4f98-8f21-23bb115fd786",
+            "sourceColumn": "ParentalSupport",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "GradeClass",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "2366ece7-5899-4fdd-8fc0-04004957b081",
+            "sourceColumn": "GradeClass",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "f122be7b-8a29-42ff-ae85-8d0142c25498",
+            "sourceColumn": "count",
+            "summarizeBy": "sum"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "ec70fc93-220a-4b90-9e08-7be1867bb177",
+        "partitions": [
+          {
+            "name": "ambos gen_gpa",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = Csv.Document(File.Contents(\"C:\\Users\\manue\\Downloads\\ambos gen_gpa.csv\"),[Delimiter=\",\", Columns=3, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Encabezados promovidos\" = Table.PromoteHeaders(Origen, [PromoteAllScalars=true]),",
+                "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"ParentalSupport\", type text}, {\"GradeClass\", Int64.Type}, {\"count\", Int64.Type}}),",
+                "    #\"Filas inversas\" = Table.ReverseRows(#\"Tipo cambiado\")",
+                "in",
+                "    #\"Filas inversas\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_a19c11b7-917d-468a-84d3-76b87e645a4e",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "8fa27a62-1368-446a-879c-b14e1c2e764c",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Año",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "d5bc7a06-f9d1-4f42-b158-56f50997d7dc",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NroMes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "cb4ea760-41cb-4e46-b0d8-7c90ba22e52e",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "f9570fda-1338-452c-89c0-e62a16064ecb",
+            "sortByColumn": "NroMes",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NroTrimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([NroMes] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "042e3e45-e583-4e9c-96c6-fabcef768c5a",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Trim. \" & [NroTrimestre]",
+            "isHidden": true,
+            "lineageTag": "dc6115d7-c698-4a31-aff0-afc3d895512b",
+            "sortByColumn": "NroTrimestre",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Día",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "ecfd1aa5-fcbe-4612-ab59-74b339215a01",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Jerarquía de fechas",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Año",
+                "column": "Año",
+                "lineageTag": "055ee308-b021-4205-862c-b042b496abac",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "ac11240b-0462-49ed-9cea-0830581c7b1e",
+                "ordinal": 1
+              },
+              {
+                "name": "Mes",
+                "column": "Mes",
+                "lineageTag": "ca170126-5649-4ba7-a2f0-e65e91f739c3",
+                "ordinal": 2
+              },
+              {
+                "name": "Día",
+                "column": "Día",
+                "lineageTag": "0fad11c7-2f73-4d29-8f81-d5f528d73f10",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "c37e3972-493c-442f-ba57-fb36bea9cc56"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "48d859a5-aab6-4101-a700-60fc80d50243",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_a19c11b7-917d-468a-84d3-76b87e645a4e",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "AUSENCIA_GRADE",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Ausencias",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "004bf406-8645-4fbf-af1b-c07c6f2efa0b",
+            "sourceColumn": "Ausencias",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Promedio",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e661b3b1-5a52-4b8b-9c13-05a4ddc36efc",
+            "sourceColumn": "Promedio",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "22220fc4-7c4e-4c21-9739-56935c6272c3",
+            "sourceColumn": "count",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "1fb9b52f-f5b1-483d-8f57-e441765a04c2",
+        "partitions": [
+          {
+            "name": "AUSENCIA_GRADE",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = Csv.Document(File.Contents(\"C:\\Users\\manue\\Downloads\\AUSENCIA_GRADE.csv\"),[Delimiter=\",\", Columns=3, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Encabezados promovidos\" = Table.PromoteHeaders(Origen, [PromoteAllScalars=true]),",
+                "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"Absences\", Int64.Type}, {\"GradeClass\", Int64.Type}, {\"count\", Int64.Type}}),",
+                "    #\"Columnas con nombre cambiado\" = Table.RenameColumns(#\"Tipo cambiado\",{{\"Absences\", \"Ausencias\"}, {\"GradeClass\", \"Promedio\"}})",
+                "in",
+                "    #\"Columnas con nombre cambiado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "genero_tiempo",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegación"
+          }
+        ],
+        "changedProperties": [
+          {
+            "property": "IsHidden"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Gender",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "8891ee51-4fed-4109-8985-aa8434f2bace",
+            "sourceColumn": "Gender",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "autoestudio semanal",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0\\ %;-0\\ %;0\\ %",
+            "isHidden": true,
+            "lineageTag": "ef37b0bc-933f-4d43-b4d5-45aa4f0bc58d",
+            "sourceColumn": "autoestudio semanal",
+            "summarizeBy": "average"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "d1ed6b55-c426-4d27-ab65-80ff2f3e2ad7",
+        "partitions": [
+          {
+            "name": "genero_tiempo",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = Csv.Document(File.Contents(\"C:\\Users\\manue\\Downloads\\genero_tiempo.csv\"),[Delimiter=\",\", Columns=2, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Encabezados promovidos\" = Table.PromoteHeaders(Origen, [PromoteAllScalars=true]),",
+                "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"Gender\", type text}, {\"AVG(StudyTimeWeekly)\", Int64.Type}}),",
+                "    #\"Columnas con nombre cambiado\" = Table.RenameColumns(#\"Tipo cambiado\",{{\"AVG(StudyTimeWeekly)\", \"autoestudio semanal\"}})",
+                "in",
+                "    #\"Columnas con nombre cambiado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "mujer_gpa",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "changedProperties": [
+          {
+            "property": "IsHidden"
+          }
+        ],
+        "columns": [
+          {
+            "name": "GradeClass",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "e3945a9d-6335-4579-bf7a-85919ed511a3",
+            "sourceColumn": "GradeClass",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Gender",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "8ddf9744-adec-464d-b232-7ef894c90590",
+            "sourceColumn": "Gender",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "e8c653df-d548-4fd9-8e61-245eea2c494c",
+            "sourceColumn": "count",
+            "summarizeBy": "sum"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "5d799fca-fb64-42bb-82ef-470f2f967394",
+        "partitions": [
+          {
+            "name": "mujer_gpa",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = Csv.Document(File.Contents(\"C:\\Users\\manue\\Downloads\\mujer_gpa.csv\"),[Delimiter=\",\", Columns=3, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Encabezados promovidos\" = Table.PromoteHeaders(Origen, [PromoteAllScalars=true]),",
+                "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"GradeClass\", Int64.Type}, {\"Gender\", type text}, {\"count\", Int64.Type}})",
+                "in",
+                "    #\"Tipo cambiado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "hombre_gpa",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "changedProperties": [
+          {
+            "property": "IsHidden"
+          }
+        ],
+        "columns": [
+          {
+            "name": "GradeClass",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "a583bfb3-3065-42fd-a902-5f1323d45f68",
+            "sourceColumn": "GradeClass",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Gender",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "a9cdef18-0ddf-4296-b66f-db8918aecc62",
+            "sourceColumn": "Gender",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "99a45545-5eba-4ae3-8961-e4894a767445",
+            "sourceColumn": "count",
+            "summarizeBy": "sum"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "c4e3e20b-6597-4790-a6fa-f8437be45e73",
+        "partitions": [
+          {
+            "name": "hombre_gpa",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = Csv.Document(File.Contents(\"C:\\Users\\manue\\Downloads\\hombre_gpa.csv\"),[Delimiter=\",\", Columns=3, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Encabezados promovidos\" = Table.PromoteHeaders(Origen, [PromoteAllScalars=true]),",
+                "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"GradeClass\", Int64.Type}, {\"Gender\", type text}, {\"count\", Int64.Type}})",
+                "in",
+                "    #\"Tipo cambiado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "ser_social_educación",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "changedProperties": [
+          {
+            "property": "IsHidden"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Extracurricular",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "2eefb198-955a-4c3f-9f80-51b893b7db51",
+            "sourceColumn": "Extracurricular",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Volunteering",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "87ee66c1-f6b3-45af-aa68-2bbb6b67eedb",
+            "sourceColumn": "Volunteering",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "AVG(StudyTimeWeekly)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "7d1c0b01-475e-49c2-9364-f883c7eb4695",
+            "sourceColumn": "AVG(StudyTimeWeekly)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "fb076702-b6b2-4496-a8ff-bda0b382fa5b",
+            "sourceColumn": "count",
+            "summarizeBy": "sum"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "35874828-8677-4deb-8500-183c8c09683f",
+        "partitions": [
+          {
+            "name": "ser_social_educación",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = Csv.Document(File.Contents(\"C:\\Users\\manue\\Downloads\\ser_social_educación.csv\"),[Delimiter=\",\", Columns=4, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Encabezados promovidos\" = Table.PromoteHeaders(Origen, [PromoteAllScalars=true]),",
+                "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"Extracurricular\", Int64.Type}, {\"Volunteering\", Int64.Type}, {\"AVG(StudyTimeWeekly)\", Int64.Type}, {\"count\", Int64.Type}})",
+                "in",
+                "    #\"Tipo cambiado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "educación_appoyo",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "changedProperties": [
+          {
+            "property": "IsHidden"
+          }
+        ],
+        "columns": [
+          {
+            "name": "ParentalEducation",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "6f32d478-a7d4-42ca-8faa-843b35cc147b",
+            "sourceColumn": "ParentalEducation",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ParentalSupport",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "63b03523-a4b7-46fe-920c-f53680a8acd2",
+            "sourceColumn": "ParentalSupport",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "c0f0ff3d-621d-4efc-b277-9e04887f33d3",
+            "sourceColumn": "count",
+            "summarizeBy": "sum"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "7d03a1db-4adf-49ca-b9bd-ca5e1b3c099a",
+        "partitions": [
+          {
+            "name": "educación_appoyo",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = Csv.Document(File.Contents(\"C:\\Users\\manue\\Downloads\\educación_appoyo.csv\"),[Delimiter=\",\", Columns=3, Encoding=65001, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Encabezados promovidos\" = Table.PromoteHeaders(Origen, [PromoteAllScalars=true]),",
+                "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"ParentalEducation\", type text}, {\"ParentalSupport\", type text}, {\"count\", Int64.Type}})",
+                "in",
+                "    #\"Tipo cambiado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "TABLA",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "StudentID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "62db92f3-da82-4f17-aee9-484fa811889d",
+            "sourceColumn": "StudentID",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "Age",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f6afde91-ae9f-4a41-88dc-f0350d38df71",
+            "sourceColumn": "Age",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gender",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a584e81b-12d9-44c1-9094-5cf4b443e1ae",
+            "sourceColumn": "Gender",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Ethnicity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2bd0b10e-6df1-40ec-afad-0cb8e58d3c8c",
+            "sourceColumn": "Ethnicity",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ParentalEducation",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "800f8090-0920-472e-9bb4-404cae179210",
+            "sourceColumn": "ParentalEducation",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "StudyTimeWeekly",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "0033ce16-67cc-4c66-aa03-7060e520adc9",
+            "sourceColumn": "StudyTimeWeekly",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Absences",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "437ff426-c72c-4d09-b266-0d852b125bf6",
+            "sourceColumn": "Absences",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Tutoring",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "680b0682-7067-490e-8c58-fcbb7b408b81",
+            "sourceColumn": "Tutoring",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ParentalSupport",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "00ad2919-a1d1-4b20-9465-b70a64f97829",
+            "sourceColumn": "ParentalSupport",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Extracurricular",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d79e2e9e-da50-4472-b65b-05325a57a256",
+            "sourceColumn": "Extracurricular",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Sports",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "07e10555-9178-47da-ad3d-4571085cbfdf",
+            "sourceColumn": "Sports",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Music",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6a2eb86e-e3df-4836-8658-f4b6251b9a8d",
+            "sourceColumn": "Music",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Volunteering",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b056cf65-9eb9-412a-a76e-3d810fb0c259",
+            "sourceColumn": "Volunteering",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "GPA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "29c08f13-2b3b-4fb8-a261-86349c89682a",
+            "sourceColumn": "GPA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "GradeClass",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8cd846af-eec0-4304-af74-e7c82eaebdd6",
+            "sourceColumn": "GradeClass",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "85b00f4c-612e-46ce-a072-40069c6409d3",
+        "partitions": [
+          {
+            "name": "TABLA",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = Csv.Document(File.Contents(\"C:\\Users\\manue\\Downloads\\TABLA.csv\"),[Delimiter=\",\", Columns=15, Encoding=65001, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Encabezados promovidos\" = Table.PromoteHeaders(Origen, [PromoteAllScalars=true]),",
+                "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"StudentID\", Int64.Type}, {\"Age\", Int64.Type}, {\"Gender\", type text}, {\"Ethnicity\", type text}, {\"ParentalEducation\", type text}, {\"StudyTimeWeekly\", Int64.Type}, {\"Absences\", Int64.Type}, {\"Tutoring\", Int64.Type}, {\"ParentalSupport\", type text}, {\"Extracurricular\", Int64.Type}, {\"Sports\", Int64.Type}, {\"Music\", Int64.Type}, {\"Volunteering\", Int64.Type}, {\"GPA\", Int64.Type}, {\"GradeClass\", Int64.Type}})",
+                "in",
+                "    #\"Tipo cambiado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "educaación y apoyo en grade",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "changedProperties": [
+          {
+            "property": "IsHidden"
+          }
+        ],
+        "columns": [
+          {
+            "name": "ParentalEducation",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "807ac8b3-cf92-458b-b0a8-2c6cff7093a2",
+            "sourceColumn": "ParentalEducation",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ParentalSupport",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "05ccf84a-2c52-40bc-ae02-d17f6413ad50",
+            "sourceColumn": "ParentalSupport",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "GradeClass",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "2c3ecea5-7999-4470-a6ae-081f9aad8b66",
+            "sourceColumn": "GradeClass",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "69d7f672-c8bc-45b7-ad9d-5d09c29ab8e2",
+            "sourceColumn": "count",
+            "summarizeBy": "sum"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "1cb692b1-ed88-4d7f-a256-98d17e85b025",
+        "partitions": [
+          {
+            "name": "educaación y apoyo en grade",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = Csv.Document(File.Contents(\"C:\\Users\\manue\\Downloads\\educaación y apoyo en grade.csv\"),[Delimiter=\",\", Columns=4, Encoding=65001, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Encabezados promovidos\" = Table.PromoteHeaders(Origen, [PromoteAllScalars=true]),",
+                "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"ParentalEducation\", type text}, {\"ParentalSupport\", type text}, {\"GradeClass\", Int64.Type}, {\"count\", Int64.Type}})",
+                "in",
+                "    #\"Tipo cambiado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "alumnos por nota",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Notas",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "2c3a6607-32f8-4b01-bfbf-391c930b68ba",
+            "sourceColumn": "Notas",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "conteo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4d31dd82-516e-413d-8d9d-4046815c18f8",
+            "sourceColumn": "conteo",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "75883c06-079f-4385-8315-b5c760fb0ff3",
+        "partitions": [
+          {
+            "name": "alumnos por nota",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = Csv.Document(File.Contents(\"C:\\Users\\manue\\Downloads\\alumnos por nota.csv\"),[Delimiter=\",\", Columns=2, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Encabezados promovidos\" = Table.PromoteHeaders(Origen, [PromoteAllScalars=true]),",
+                "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"GradeClass\", Int64.Type}, {\"conteo\", Int64.Type}}),",
+                "    #\"Columnas con nombre cambiado\" = Table.RenameColumns(#\"Tipo cambiado\",{{\"GradeClass\", \"Notas\"}})",
+                "in",
+                "    #\"Columnas con nombre cambiado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "padres e hios",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "changedProperties": [
+          {
+            "property": "IsHidden"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Apoyo de los padres",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0798afc4-8bd1-4f12-be88-db8e686fa5f3",
+            "sourceColumn": "Apoyo de los padres",
+            "summarizeBy": "distinctCount"
+          },
+          {
+            "name": "GradeClass",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "657bf481-6d87-47b7-a41d-cd9a60438e38",
+            "sourceColumn": "GradeClass",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Conteo estudiantes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b5b2dcae-7713-4f8a-9404-768ed4cb323b",
+            "sourceColumn": "Conteo estudiantes",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "29213fe0-2ae5-442d-9cf6-1bd5e29d4576",
+        "partitions": [
+          {
+            "name": "padres e hios",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = Csv.Document(File.Contents(\"C:\\Users\\manue\\Downloads\\padres e hios.csv\"),[Delimiter=\",\", Columns=3, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Encabezados promovidos\" = Table.PromoteHeaders(Origen, [PromoteAllScalars=true]),",
+                "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"ParentalSupport\", type text}, {\"GradeClass\", Int64.Type}, {\"count\", Int64.Type}}),",
+                "    #\"Columnas con nombre cambiado\" = Table.RenameColumns(#\"Tipo cambiado\",{{\"ParentalSupport\", \"Apoyo de los padres\"}, {\"count\", \"Conteo estudiantes\"}})",
+                "in",
+                "    #\"Columnas con nombre cambiado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "genero por nota",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Notas",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1e38052b-416a-46c0-8a4d-22834fff34d2",
+            "sourceColumn": "Notas",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Género",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e45d141f-1d5d-480d-b4d5-0f171e092393",
+            "sourceColumn": "Género",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "bdb42685-b7c7-4ee9-83b7-f8389d14b022",
+            "sourceColumn": "count",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "3d30ac6c-63af-4acd-84fa-3a9a4e9196c4",
+        "partitions": [
+          {
+            "name": "genero por nota",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = Csv.Document(File.Contents(\"C:\\Users\\manue\\Downloads\\genero por nota.csv\"),[Delimiter=\",\", Columns=3, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Encabezados promovidos\" = Table.PromoteHeaders(Origen, [PromoteAllScalars=true]),",
+                "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"GradeClass\", Int64.Type}, {\"Gender\", type text}, {\"count\", Int64.Type}}),",
+                "    #\"Columnas con nombre cambiado\" = Table.RenameColumns(#\"Tipo cambiado\",{{\"GradeClass\", \"Notas\"}, {\"Gender\", \"Género\"}})",
+                "in",
+                "    #\"Columnas con nombre cambiado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "horaspromedio",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Tiempo semanal",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "e218aeb7-1c38-44dc-8281-6db363107028",
+            "sourceColumn": "Tiempo semanal",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Grados",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c277e1c1-0fe6-43cd-a11a-f1b80c7bd6bd",
+            "sourceColumn": "Grados",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "f678a9de-4efb-4ad0-b075-6d68352b4d1c",
+        "partitions": [
+          {
+            "name": "horaspromedio",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = Excel.Workbook(File.Contents(\"C:\\Users\\manue\\Desktop\\Book1.xlsx\"), null, true),",
+                "    horaspromedio_Sheet = Origen{[Item=\"horaspromedio\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Encabezados promovidos\" = Table.PromoteHeaders(horaspromedio_Sheet, [PromoteAllScalars=true]),",
+                "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"Tiempo semanal\", type number}, {\"GradeClass\", Int64.Type}}),",
+                "    #\"Columnas con nombre cambiado\" = Table.RenameColumns(#\"Tipo cambiado\",{{\"GradeClass\", \"Grados\"}})",
+                "in",
+                "    #\"Columnas con nombre cambiado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "etnia promedio",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Ethnicity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "cae254d1-be36-4c91-90a8-5cba858bdad7",
+            "sourceColumn": "Ethnicity",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "GradeClass",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e7f221fc-62ae-42db-a741-ba1ebe4716d9",
+            "sourceColumn": "GradeClass",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "05165d6e-ea10-4704-a160-5c2280eb7654",
+        "partitions": [
+          {
+            "name": "etnia promedio",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = Csv.Document(File.Contents(\"C:\\Users\\manue\\Downloads\\etnia promedio.csv\"),[Delimiter=\",\", Columns=2, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Encabezados promovidos\" = Table.PromoteHeaders(Origen, [PromoteAllScalars=true]),",
+                "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"Ethnicity\", type text}, {\"GradeClass\", Int64.Type}})",
+                "in",
+                "    #\"Tipo cambiado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "CONTEO ETNIA",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Ethnicity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7f85d2e9-88f0-4cfb-b3e5-ecf230aaeef2",
+            "sourceColumn": "Ethnicity",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "conteo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "bfaab7be-8c5b-45bb-bc09-a4dcc88ba7b5",
+            "sourceColumn": "conteo",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "3d1653f2-e97e-4a2a-a2a7-becede9bfef1",
+        "partitions": [
+          {
+            "name": "CONTEO ETNIA",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = Csv.Document(File.Contents(\"C:\\Users\\manue\\Downloads\\CONTEO ETNIA.csv\"),[Delimiter=\",\", Columns=2, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Encabezados promovidos\" = Table.PromoteHeaders(Origen, [PromoteAllScalars=true]),",
+                "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"Ethnicity\", type text}, {\"conteo\", Int64.Type}})",
+                "in",
+                "    #\"Tipo cambiado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

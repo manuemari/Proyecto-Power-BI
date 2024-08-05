@@ -1,0 +1,217 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 843.24324324324323,
+        "y": 229.72972972972974
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 40.5
+          },
+          "nodeIndex": "ambos gen_gpa",
+          "nodeLineageTag": "ec70fc93-220a-4b90-9e08-7be1867bb177",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 276,
+            "y": 153.5
+          },
+          "nodeIndex": "AUSENCIA_GRADE",
+          "nodeLineageTag": "1fb9b52f-f5b1-483d-8f57-e441765a04c2",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 568,
+            "y": 52.5
+          },
+          "nodeIndex": "genero_tiempo",
+          "nodeLineageTag": "d1ed6b55-c426-4d27-ab65-80ff2f3e2ad7",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 866,
+            "y": 383.5
+          },
+          "nodeIndex": "mujer_gpa",
+          "nodeLineageTag": "5d799fca-fb64-42bb-82ef-470f2f967394",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 789,
+            "y": 587.5
+          },
+          "nodeIndex": "hombre_gpa",
+          "nodeLineageTag": "c4e3e20b-6597-4790-a6fa-f8437be45e73",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 1208,
+            "y": 345.5
+          },
+          "nodeIndex": "ser_social_educación",
+          "nodeLineageTag": "35874828-8677-4deb-8500-183c8c09683f",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 424,
+            "y": 408
+          },
+          "nodeIndex": "educación_appoyo",
+          "nodeLineageTag": "7d03a1db-4adf-49ca-b9bd-ca5e1b3c099a",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 1617.4054054054054,
+            "y": 593.78378378378386
+          },
+          "nodeIndex": "TABLA",
+          "nodeLineageTag": "85b00f4c-612e-46ce-a072-40069c6409d3",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 2030,
+            "y": 296
+          },
+          "nodeIndex": "educaación y apoyo en grade",
+          "nodeLineageTag": "1cb692b1-ed88-4d7f-a256-98d17e85b025",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2314,
+            "y": 320
+          },
+          "nodeIndex": "alumnos por nota",
+          "nodeLineageTag": "75883c06-079f-4385-8315-b5c760fb0ff3",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1519.9310344827584,
+            "y": 1152.8275862068967
+          },
+          "nodeIndex": "padres e hios",
+          "nodeLineageTag": "29213fe0-2ae5-442d-9cf6-1bd5e29d4576",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2055.655172413793,
+            "y": 1114.8965517241379
+          },
+          "nodeIndex": "genero por nota",
+          "nodeLineageTag": "3d30ac6c-63af-4acd-84fa-3a9a4e9196c4",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2401.7241379310344,
+            "y": 920.89655172413791
+          },
+          "nodeIndex": "horaspromedio",
+          "nodeLineageTag": "f678a9de-4efb-4ad0-b075-6d68352b4d1c",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2744.344827586207,
+            "y": 990.75862068965523
+          },
+          "nodeIndex": "etnia promedio",
+          "nodeLineageTag": "05165d6e-ea10-4704-a160-5c2280eb7654",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2554.5517057221514,
+            "y": 678.31034482758616
+          },
+          "nodeIndex": "CONTEO ETNIA",
+          "nodeLineageTag": "3d1653f2-e97e-4a2a-a2a7-becede9bfef1",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 74,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}
